@@ -1,0 +1,82 @@
+﻿@model Person
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="PersonID" />
+    <div class="form-group">
+        <label asp-for="PersianFullName"></label>
+        <div><span asp-validation-for="PersianFullName" class="text-danger"></span></div>
+        <input asp-for="PersianFullName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="EnglishFullName"></label>
+        <div><span asp-validation-for="EnglishFullName" class="text-danger"></span></div>
+        <input asp-for="EnglishFullName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="PersianBio" />
+        <label asp-for="PersianBio"></label>
+        <input asp-for="PersianBio" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="EnglishBio" />
+        <label asp-for="EnglishBio"></label>
+        <input asp-for="EnglishBio" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="PersianAddress" />
+        <label asp-for="PersianAddress"></label>
+        <input asp-for="PersianAddress" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="EnglishAddress" />
+        <label asp-for="EnglishAddress"></label>
+        <input asp-for="EnglishAddress" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="Email" />
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="PhoneNumber" />
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="WebSite" />
+        <label asp-for="WebSite"></label>
+        <input asp-for="WebSite" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="Facebook" />
+        <label asp-for="Facebook"></label>
+        <input asp-for="Facebook" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="Pinteret" />
+        <label asp-for="Pinteret"></label>
+        <input asp-for="Pinteret" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="Instagram" />
+        <label asp-for="Instagram"></label>
+        <input asp-for="Instagram" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="Twitter" />
+        <label asp-for="Twitter"></label>
+        <input asp-for="Twitter" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="Facebook" />
+        <label asp-for="Facebook"></label>
+        <input asp-for="Facebook" class="form-control" />
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">ذخیره</button>
+        <a asp-action="Index" class="btn btn-default">انصراف</a>
+    </div>
+</form>
