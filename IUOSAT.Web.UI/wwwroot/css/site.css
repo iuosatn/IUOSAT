@@ -1,12 +1,10 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
-for details on configuring this project to bundle and minify static web assets. */
+﻿
 body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
+
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -18,7 +16,6 @@ body {
     line-height: 1.4;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;
 }
@@ -34,4 +31,65 @@ body {
     .carousel-caption {
         display: none;
     }
+}
+.navbar-nav a:hover, .blackhover:hover {
+    color: black !important;
+}
+.navbar-nav li {
+    list-style:none !important;
+}
+.lan {
+    background-color: white;
+    padding: 5px;
+    font-size: large;
+    text-decoration: none;
+    color: black
+}
+.lan:hover
+{
+    color:white;
+    background-color:black;
+}
+li a, .dropbtn {
+    display: inline-block;
+ 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+   
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.navbar-toggle
+
+{
+    background-color:black;
 }

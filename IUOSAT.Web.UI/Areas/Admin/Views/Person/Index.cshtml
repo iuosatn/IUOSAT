@@ -29,35 +29,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.EnglishAddress)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Facebook)
-            </th>
-
-            <th>
-                @Html.DisplayNameFor(model => model.Pinteret)
-            </th>
-
-            <th>
-                @Html.DisplayNameFor(model => model.Twitter)
-            </th>
-
-            <th>
-                @Html.DisplayNameFor(model => model.Instagram)
-            </th>
-
-            <th>
-                @Html.DisplayNameFor(model => model.PhoneNumber)
-            </th>
-
-            <th>
-                @Html.DisplayNameFor(model => model.WebSite)
-            </th>
+          
 
         </tr>
     </thead>
@@ -86,38 +58,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.EnglishAddress)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-
-            <td>
-                @{
-
-                    var base64 = Convert.ToBase64String(item.Image);
-                    var imgSrc = String.Format("data:image/jpg;base64,{0}", base64);
-                }
-
-                <img src="@imgSrc" class="img img-responsive" />
-
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Facebook)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Pinteret)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Twitter)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Instagram)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.WebSite)
-            </td>
+           
             <td>
                 <a asp-action="Edit" asp-route-Id="@item.PersonID" class="btn btn-info">ویرایش</a>
                 |

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - IUOSAT.Web.UI</title>
+    <title>@ViewData["Title"] - Iran University of Science and Technology</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -18,10 +18,13 @@
 </head>
 <body>
    
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div  class="container">
-                <a asp-action="Index" asp-controller="PersianHome" asp-area="" title="Persian">فارسی</a>
-                <a asp-action="Index" asp-controller="Home" asp-area="" title="English">English</a>
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:white!important">
+            <div class="container">
+                <img src="~/images/iust_logo_en_v1.png" height="30"  />
+                <div style="float:right">
+                    <a asp-action="Index" asp-controller="PersianHome" asp-area="" title="Persian" class="lan">فارسی</a>
+                    <a asp-action="Index" asp-controller="Home" asp-area="" title="English" class="lan">English</a>
+                </div>
             </div>
                <div class="container">
                 <div class="navbar-header">
@@ -31,11 +34,23 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">IUOSAT.Web.UI</a>
+                    <a href="http://www.iust.ac.ir/" class="navbar-brand blackhover">Iran University of Science and Technology</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="navbar-nav">
                         <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+
+
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Courses</a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Students & Academic staff</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Articles</a></li>
                         <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                         <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                     </ul>
@@ -49,7 +64,7 @@
             @RenderBody()
             <hr />
             <footer>
-                <p>&copy; 2019 - IUOSAT.Web.UI</p>
+                <p>&copy; 2019 - <a href="/">Iran University of Science and Technology</a></p>
             </footer>
         </div>
 

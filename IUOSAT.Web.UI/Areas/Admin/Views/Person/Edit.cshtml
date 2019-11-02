@@ -75,6 +75,11 @@
         <label asp-for="Facebook"></label>
         <input asp-for="Facebook" class="form-control" />
     </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="Image" />
+        <label asp-for="Image"></label>
+        <input type="file" name="files" />
+    </div>
     <div class="text-center">
         <button class="btn btn-primary" type="submit">ذخیره</button>
         <a asp-action="Index" class="btn btn-default">انصراف</a>

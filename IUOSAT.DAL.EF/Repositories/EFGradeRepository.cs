@@ -28,7 +28,7 @@ namespace IUOSAT.DAL.EF.Repositories
 
         public List<Grade> Find(string query)
         {
-            return _context.Grades.Where(c => c.Name == query).ToList();
+            return _context.Grades.Where(c => c.PersianName == query).ToList();
         }
 
         public List<Grade> GetAll()
@@ -53,8 +53,8 @@ namespace IUOSAT.DAL.EF.Repositories
                 .FirstOrDefault(p => p.GradeID == Grade.GradeID);
                 if (dbEntry != null)
                 {
-                    dbEntry.Name = Grade.Name;
-                   
+                    dbEntry.PersianName = Grade.PersianName;
+                    dbEntry.EnglishName = Grade.EnglishName;
 
                 }
             }

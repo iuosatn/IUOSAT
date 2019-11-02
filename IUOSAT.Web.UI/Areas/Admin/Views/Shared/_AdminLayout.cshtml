@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>پنل مدیریت - فروشگاه</title>
+    <title>پنل مدیریت</title>
     <link href="~/admintheme/css-rtl/bootstrap.min.css" rel="stylesheet" />
     <link href="~/admintheme/metisMenu/metisMenu/metisMenu.css" rel="stylesheet" />
     <link href="~/admintheme/css-rtl/sb-admin-2.css" rel="stylesheet" />
@@ -37,24 +37,29 @@
 
 
                         <li>
-                            <a href="@Url.Action("NewOrders","Order")"><i class="fa fa-dashboard fa-fw"></i>مدیریت سفارشات</a>
+                            <a href="@Url.Action("NewOrders","Order")"><i class="fa fa-dashboard fa-fw"></i>مدیریت پیامها</a>
                         </li>
-
+                        <li>
+                            <a href="@Url.Action("NewOrders","Order")"><i class="fa fa-dashboard fa-fw"></i>مدیریت کامنت ها</a>
+                        </li>
                         <!-- موقت قرار گرفته است -->
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> تنظیمات<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="@Url.Action("Index","Product")"><i class="fa fa-dashboard fa-fw"></i>ثبت کالا</a>
+                                    <a href="@Url.Action("Index","Person")"><i class="fa fa-dashboard fa-fw"></i>ثبت افراد</a>
                                 </li>
                                 <li>
-                                    <a href="@Url.Action("Index","Category")"><i class="fa fa-dashboard fa-fw"></i>ثبت دسته بندی</a>
+                                    <a href="@Url.Action("Index","Category")"><i class="fa fa-dashboard fa-fw"></i>ثبت گروه درسی</a>
                                 </li>
                                 <li>
-                                    <a href="@Url.Action("Index","Brand")"><i class="fa fa-dashboard fa-fw"></i>ثبت برند</a>
+                                    <a href="@Url.Action("Index","Brand")"><i class="fa fa-dashboard fa-fw"></i>ثبت گروه افراد</a>
                                 </li>
                                 <li>
-                                    <a href="@Url.Action("Index","Property")"><i class="fa fa-dashboard fa-fw"></i>ثبت مشخصات</a>
+                                    <a href="@Url.Action("Index","Property")"><i class="fa fa-dashboard fa-fw"></i>ثبت دروس</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","Grade")"><i class="fa fa-dashboard fa-fw"></i>ثبت مقطع تحصیلی</a>
                                 </li>
                             </ul>
                         </li>

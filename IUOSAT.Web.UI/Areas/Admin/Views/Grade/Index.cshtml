@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Grade>
+@{
+    ViewData["Title"] = "Index";
+}
+<p>
+    <a asp-action="Create" class="btn btn-success">ثبت جدید</a>
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PersianName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EnglishName)
+            </th>
+
+
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PersianName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EnglishName)
+            </th>
+
+            <td>
+                <a asp-action="Edit" asp-route-Id="@item.GradeID" class="btn btn-info">ویرایش</a>
+                |
+                <a asp-action="Delete" asp-route-Id="@item.GradeID" class="btn btn-danger" onclick="return confirm('از حذف این کالا مطمئن هستید؟')">حذف</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+

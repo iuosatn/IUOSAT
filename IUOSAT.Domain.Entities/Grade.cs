@@ -8,6 +8,8 @@ namespace IUOSAT.Domain.Entities
     {
         public int GradeID { get; set; }
 
-        public string Name { get; set; }
+        public string PersianName { get; set; }
+
+        public string EnglishName { get; set; }
     }
 }

@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IUOSAT.Web.UI.Areas.Admin.Controllers
 {
-    //[Area("admin")]
+    [Area("admin")]
     public class PersonController : Controller
     {
         private readonly IPersonRepository _PersonRepository;
