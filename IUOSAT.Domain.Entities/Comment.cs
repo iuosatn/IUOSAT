@@ -10,7 +10,10 @@ namespace IUOSAT.Domain.Entities
         public int ParentID { get; set; }
         public int ArticleID { get; set; }
         public string Name { get; set; }
+        public string Email { get; set; }
+        public string Text { get; set; }
         public DateTime DateTime { get; set; }
         public Article Article { get; set; }
+        public bool MarkShipped { get; set; }
     }
 }

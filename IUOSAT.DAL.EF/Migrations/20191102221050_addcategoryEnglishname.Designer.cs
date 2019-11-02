@@ -4,14 +4,16 @@ using IUOSAT.DAL.EF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace IUOSAT.DAL.EF.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20191102221050_addcategoryEnglishname")]
+    partial class addcategoryEnglishname
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -65,15 +67,9 @@ namespace IUOSAT.DAL.EF.Migrations
 
                     b.Property<DateTime>("DateTime");
 
-                    b.Property<string>("Email");
-
-                    b.Property<bool>("MarkShipped");
-
                     b.Property<string>("Name");
 
                     b.Property<int>("ParentID");
-
-                    b.Property<string>("Text");
 
                     b.HasKey("CommentID");
 

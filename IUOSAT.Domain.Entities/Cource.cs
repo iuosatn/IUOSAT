@@ -8,6 +8,7 @@ namespace IUOSAT.Domain.Entities
     {
         public int CourceID { get; set; }
 
-        public string Name { get; set; }
+        public string PersianName { get; set; }
+        public string EnglishName { get; set; }
     }
 }

@@ -28,7 +28,7 @@ namespace IUOSAT.DAL.EF.Repositories
 
         public List<Category> Find(string query)
         {
-            return _context.Categories.Where(c => c.Name == query).ToList();
+            return _context.Categories.Where(c => c.PersianName == query).ToList();
         }
 
         public List<Category> GetAll()
@@ -53,8 +53,8 @@ namespace IUOSAT.DAL.EF.Repositories
                 .FirstOrDefault(p => p.CategoryID == Category.CategoryID);
                 if (dbEntry != null)
                 {
-                    dbEntry.Name = Category.Name;
-
+                    dbEntry.PersianName = Category.PersianName;
+                    dbEntry.EnglishName = Category.EnglishName;
                 }
             }
             _context.SaveChanges();

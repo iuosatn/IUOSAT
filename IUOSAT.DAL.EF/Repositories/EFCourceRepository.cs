@@ -28,7 +28,7 @@ namespace IUOSAT.DAL.EF.Repositories
 
         public List<Cource> Find(string query)
         {
-            return _context.Cources.Where(c => c.Name == query).ToList();
+            return _context.Cources.Where(c => c.PersianName == query).ToList();
         }
 
         public List<Cource> GetAll()
@@ -53,8 +53,8 @@ namespace IUOSAT.DAL.EF.Repositories
                 .FirstOrDefault(p => p.CourceID == Cource.CourceID);
                 if (dbEntry != null)
                 {
-                    dbEntry.Name = Cource.Name;
-                    
+                    dbEntry.PersianName = Cource.PersianName;
+                    dbEntry.EnglishName = Cource.EnglishName;
                 }
             }
             _context.SaveChanges();
