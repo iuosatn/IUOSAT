@@ -17,22 +17,22 @@
     </div>
     <div class="form-group">
         <input type="hidden" asp-for="PersianBio" />
-        <label asp-for="PersianBio"></label>
+        <div><span asp-validation-for="PersianBio" class="text-danger"></span></div>
         <input asp-for="PersianBio" class="form-control" />
     </div>
     <div class="form-group">
         <input type="hidden" asp-for="EnglishBio" />
-        <label asp-for="EnglishBio"></label>
+        <div><span asp-validation-for="EnglishBio" class="text-danger"></span></div>
         <input asp-for="EnglishBio" class="form-control" />
     </div>
     <div class="form-group">
         <input type="hidden" asp-for="PersianAddress" />
-        <label asp-for="PersianAddress"></label>
+        <div><span asp-validation-for="PersianAddress" class="text-danger"></span></div>
         <input asp-for="PersianAddress" class="form-control" />
     </div>
     <div class="form-group">
         <input type="hidden" asp-for="EnglishAddress" />
-        <label asp-for="EnglishAddress"></label>
+        <div><span asp-validation-for="EnglishAddress" class="text-danger"></span></div>
         <input asp-for="EnglishAddress" class="form-control" />
     </div>
     <div class="form-group">
@@ -75,6 +75,17 @@
         <label asp-for="Facebook"></label>
         <input asp-for="Facebook" class="form-control" />
     </div>
+    <div class="form-group">
+        <label asp-for="CategoryID"></label>
+        <select id="selectbrand" class="select2" name="state"></select>
+        <input type="hidden" asp-for="CategoryID" />
+    </div>
+    <div class="form-group">
+        <label asp-for="GradeID"></label>
+        <select id="selectbrand" class="select2" name="state"></select>
+        <input type="hidden" asp-for="GradeID" />
+    </div>
+   
     <div class="form-group">
         <input type="hidden" asp-for="Image" />
         <label asp-for="Image"></label>
