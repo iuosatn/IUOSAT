@@ -56,7 +56,10 @@ namespace IUOSAT.DAL.EF.Repositories
                     dbEntry.Name = Article.Name;
                     dbEntry.Description = Article.Description;
                     dbEntry.GithubUrl = Article.GithubUrl;
-                    dbEntry.PersonID = Article.PersonID;                  
+                    dbEntry.PersonID = Article.PersonID;
+                    dbEntry.Title = Article.Title;
+                    dbEntry.KeyWords = Article.KeyWords;
+                    dbEntry.Body = Article.Body;
                 }
             }
             _context.SaveChanges();

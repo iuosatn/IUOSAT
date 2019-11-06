@@ -1,0 +1,20 @@
+﻿@model Skill
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="SkillID" />
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <div><span asp-validation-for="Name" class="text-danger"></span></div>
+        <input asp-for="Name" class="form-control" />
+    </div>
+   
+   
+   
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">ذخیره</button>
+        <a asp-action="Index" class="btn btn-default">انصراف</a>
+    </div>
+</form>
